@@ -1,0 +1,12 @@
+from flask import Flask, render_template
+
+app = Flask(__name__)
+
+BOT_INVITE = "https://discord.com/oauth2/authorize?client_id=1398895385711349822&permissions=8&scope=bot"
+
+@app.route("/")
+def home():
+    return render_template("index.html", bot_invite=BOT_INVITE)
+
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=5000)
