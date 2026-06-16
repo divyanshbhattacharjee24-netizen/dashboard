@@ -1,0 +1,62 @@
+body{
+margin:0;
+font-family:Arial,sans-serif;
+background:linear-gradient(180deg,#050816,#0b1026);
+color:white;
+min-height:100vh;
+}
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 40px;
+}
+
+.hero{
+text-align:center;
+padding:100px 20px;
+}
+
+.hero h1{
+font-size:3rem;
+max-width:800px;
+margin:auto;
+}
+
+.btn{
+background:#5865F2;
+color:white;
+padding:12px 20px;
+text-decoration:none;
+border-radius:10px;
+}
+
+.big{
+font-size:1.2rem;
+}
+
+.cards{
+display:flex;
+gap:20px;
+justify-content:center;
+flex-wrap:wrap;
+padding:40px;
+}
+
+.card{
+background:rgba(255,255,255,0.08);
+padding:30px;
+border-radius:16px;
+min-width:180px;
+backdrop-filter:blur(6px);
+}
+
+.stars{
+position:fixed;
+inset:0;
+background-image:radial-gradient(white 1px, transparent 1px);
+background-size:40px 40px;
+opacity:.25;
+pointer-events:none;
+}
